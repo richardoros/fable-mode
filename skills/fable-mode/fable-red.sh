@@ -35,7 +35,7 @@ case "$mode" in
     tail -n 12 "$out"
     ;;
   green)
-    if [ ! -f "$dir/$key.red.log" ]; then
+    if [ ! -f "$dir/$key.cmd" ]; then
       echo "FABLE-RED ✗ no witnessed red exists for this exact command — run 'red' first (or the command text differs)."
       exit 1
     fi
